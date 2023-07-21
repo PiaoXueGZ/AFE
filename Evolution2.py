@@ -130,9 +130,9 @@ class EAAFE:
         chrom = pre_chrom
         fitness = []
         for single_chrom in chrom:
-            single_fitness = 10  # 应为计算表达式
-            # target = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-            # single_fitness = -np.linalg.norm(target - single_chrom)
+            # single_fitness = 10  # 应为计算表达式
+            target = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+            single_fitness = -np.linalg.norm(target - single_chrom)
             fitness.append(single_fitness)
 
         return fitness
